@@ -1,0 +1,60 @@
+@use 'globals' as *;
+@import '~react-image-gallery/styles/scss/image-gallery.scss';
+body {
+  background: $black;
+  color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-main {
+  flex: 0 1 auto;
+  margin-bottom: 200px;
+  align-items: center;
+}
+
+.inner-width {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.embedded_video {
+  display: flex;
+  justify-content: center;
+}
+
+.vid-background {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  min-width: 99%;
+  max-width: 99%;
+}
+
+.image-gallery {
+  max-width: 70%;
+}
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  border: 4px solid $eod-blue;
+}
+.image-gallery-slide .image-gallery-description {
+  background: rgba(0, 0, 0, 0.7);
+}
